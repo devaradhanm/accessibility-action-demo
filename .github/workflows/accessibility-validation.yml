@@ -23,7 +23,7 @@ jobs:
       uses: microsoft/accessibility-insights-action@master
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        site-dir: ${{ github.workspace }}/fail
+        site-dir: ${{ github.workspace }}/
         output-dir: ${{ github.workspace }}/_accessibility-reports 
         
     - name: Upload report artifact
