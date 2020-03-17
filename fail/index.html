@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Input types</title>
+</head>
+
+
+
+<body role="main">
+<h1>Input types</h1>
+
+<div>
+<h2>keros-input-text-1</h2>
+<h3>no label</h3>
+<form>
+Last name:<br>
+<input id="keros-input-text-1" type="text" name="lastname">
+</form>
+</div>
+
+<div>
+<h2>keros-input-text-2</h2>
+<h3>explicit label and redundant title</h3>
+<form>
+<label for="keros-input-text-2">First name</label>
+<input id="keros-input-text-2" type="text" name="first" title="First name">
+</form>
+</div>
+
+<div>
+<h2>keros-input-text-2</h2>
+<h3>explicit label and redundant placeholder</h3>
+<form>
+<label for="keros-input-text-3">Middle name</label>
+<input id="keros-input-text-3" type="text" name="first" placeholder="Middle name">
+</form>
+</div>
+
+<div>
+<h2>keros-input-password-1</h2>
+<h3>no label</h3>
+<form>
+  User password:<br>
+  <input id="keros-input-password-1" type="password" name="psw">
+</form>
+</div>
+
+<div>
+<h2>keros-input-password-2</h2>
+<h3>aria-labelledby</h3>
+<form>
+  <div id="password">User password:</div><br>
+  <input id="keros-input-password-2" type="password" name="psw" aria-labelledby="password">
+</form>
+</div>
+
+<div>
+<h2>keros-input-number-1</h2>
+<h3>no label</h3>
+<form>
+  Quantity:
+  <input id="keros-input-number-1" type="number" name="points" min="0" max="100" step="10" value="30">
+</form>
+</div>
+
+<div>
+<h2>keros-input-number-2</h2>
+<h3>aria-label</h3>
+<form>
+  Quantity:
+  <input id="keros-input-number-2" type="number" name="points" min="0" max="100" step="10" value="30" aria-label="Quantity">
+</form>
+</div>
+
+<div>
+<h2>keros-input-date-1</h2>
+<h3>no label</h3>
+<form>
+  Enter a date before 1980-01-01:
+  <input id="keros-input-date-1" type="date" name="bday1" max="1979-12-31"><br>
+</form>
+</div>
+
+<div>
+<h2>keros-input-date-2</h2>
+<h3>title only</h3>
+<form>
+  Enter a date before 1980-01-01:
+  <input id="keros-input-date-2" type="date" name="bday2" max="1979-12-31" title="Birthday"><br>
+</form>
+</div>
+
+<div>
+<h2>Color</h2>
+<h3>no label</h3>
+<form>
+  Select your favorite color:
+  <input id="keros-input-color-1" type="color" name="favcolor">
+</form>
+</div>
+
+<div>
+<h2>keros-input-color-1</h2>
+<h3>aria-describedby only</h3>
+<form>
+  <div id="selectcolor">Select your favorite color:</div>
+  <input id="keros-input-color-2" type="color" name="favcolor" aria-describedby="selectcolor">
+</form>
+</div>
+
+<div>
+<h2>keros-input-range-1</h2>
+<h3>no label, duplicate id</h3>
+<form id="keros-input-range-1">
+  <input id="range" type="range" name="points" min="0" max="10">
+</form>
+</div>
+
+<div>
+<h2>keros-input-range-2</h2>
+<h3>no label, duplicate id</h3>
+<form id="keros-input-range-2">
+  <input id="range" type="range" name="points" min="0" max="10">
+</form>
+</div>
+
+<div>
+<h2>keros-input-month-1</h2>
+<h3>no label, invalid aria attribute</h3>
+<form>
+  Birthday (month and year):
+  <input id="keros-input-month-1" type="month" name="bdaymonth" aria-lable="Birthday">
+</form>
+</div>
+
+<div>
+<h2>keros-input-week-1</h2>
+<h3>no label, invalid aria attribute value</h3>
+<form>
+  Select a week:
+  <input id="keros-input-week-1" type="week" name="week_year" aria-labelledby="week">
+</form>
+</div>
+
+<div>
+<h2>Time</h2>
+<h3>no label, duplicate cues</h3>
+<form>
+  Select a time:
+  <input id="keros-input-time-1" type="time" name="usr_time" required aria-required="true">
+</form>
+</div>
+
+<div>
+<h2>Datetime-local</h2>
+<h3>no label</h3>
+<form>
+  Birthday (date and time):
+  <input id="keros-input-datetime-local-1" type="datetime-local" name="bdaytime" aria-describedby="">
+</form>
+</div>
+
+<div>
+<h2>Email</h2>
+<h3>no label</h3>
+<form>
+  E-mail:
+  <input id="keros-input-email-1" type="email" name="email">
+</form>
+</div>
+
+<div>
+<h2>Search</h2>
+<h3>no label</h3>
+<form>
+  Search Google:
+  <input id="keros-input-search-1" type="search" name="googlesearch">
+</form>
+</div>
+
+<div>
+<h2>Tel</h2>
+<h3>no label</h3>
+<form>
+  Telephone:
+  <input id="keros-input-tel-1" type="tel" name="usrtel">
+</form>
+</div>
+
+<div>
+<h2>URL</h2>
+<h3>no label, placeholder</h3>
+<form>
+  Add your homepage:
+  <input id="keros-input-url-1" type="url" name="homepage" placeholder="http://">
+</form>
+</div>
+
+<div>
+<h2>Radio</h2>
+<h3>no labels (x3), no group</h3>
+<form>
+  <input id="keros-input-radio-1" type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+</form>
+</div>
+
+<div>
+<h2>keros-input-radio-2</h2>
+<h3>fieldset and legend, implicit labels (x3)</h3>
+<form>
+  <fieldset>
+    <legend>Size</legend>
+        <label>
+            <input id="keros-input-radio-2" type="radio" name="size" value="small" checked> Small<br>
+        </label>
+        <label>
+            <input type="radio" name="size" value="medium"> Medium<br>
+        </label>
+        <label>
+            <input type="radio" name="size" value="large"> Large
+        </label>
+  </fieldset>
+</form>
+</div>
+
+<div>
+<h2>keros-input-checkbox-1</h2>
+<h3>aria-labels (x3), no group</h3>
+<form>
+  <input id="keros-input-checkbox-1" type="checkbox" name="vehicle" value="Bike" aria-label="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle" value="Car" aria-label="Car"> I have a car<br>
+  <input type="checkbox" name="vehicle" value="Neither" aria-label="Neither"> I have neither 
+</form>
+</div>
+
+<div>
+<h2>Checkbox</h2>
+<h3>no labels, grouped</h3>
+<form>
+  <div role="group" aria-label="Pets">Pets<br>
+        <input id="keros-input-checkbox-2" type="checkbox" name="pet" value="Bike"> I like cats<br>
+        <input type="checkbox" name="pet" value="Car"> I like dogs<br>
+        <input type="checkbox" name="pet" value="Neither"> I like bunnies 
+    </div>
+</form>
+</div>
+
+<div>
+<h2>Submit</h2>
+<h3>Has button text</h3>
+<form>
+  <input id="keros-input-submit-1" type="submit">
+</form>
+</div>
+
+<div>
+<h2>Reset</h2>
+<h3>has button text</h3>
+<form>
+  <input id="keros-input-reset-1" type="reset">
+</form>
+</div>
+
+<div>
+<h2>keros-input-button-1</h2>
+<h3>has button text</h3>
+<input id="keros-input-button-1" type="button" value="Click Me!">
+</div>
+
+<div>
+<h2>keros-input-button-1</h2>
+<h3>no button text</h3>
+<input id="keros-input-button-2" type="button">
+</div>
+
+<div>
+<h2>keros-input-button-2</h2>
+<h3>no button text</h3>
+<input id="keros-input-button-3" type="button">
+</div>
+
+<div>
+<h2>keros-input-image-1</h2>
+<h3>no label</h3>
+<form action="/action_page.php">
+  <input type="image" src="../../resources/img/test.jpg" alt="Submit" width="48" height="48" id="keros-input-image-1">
+</form>
+</div>
+
+<div>
+<h2>keros-input-image-1</h2>
+<h3>no label</h3>
+<form action="/action_page.php">
+  <input type="image" src="../../resources/img/test.jpg" width="48" height="48" id="keros-input-image-2">
+</form>
+</div>
+
+</body>
+</html>
