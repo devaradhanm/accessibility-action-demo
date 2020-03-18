@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Input types</title>
+</head>
+
+<body role="main">
+<h1>Input types</h1>
+
+<div>
+<h2>keros-input-text-2</h2>
+<h3>explicit label and redundant placeholder</h3>
+<form>
+<label for="keros-input-text-3">Middle name</label>
+<input id="keros-input-text-3" type="text" name="first" placeholder="Middle name">
+</form>
+</div>
+
+<div>
+<h2>keros-input-password-2</h2>
+<h3>aria-labelledby</h3>
+<form>
+  <div id="password">User password:</div><br>
+  <input id="keros-input-password-2" type="password" name="psw" aria-labelledby="password">
+</form>
+</div>
+
+<div>
+<h2>keros-input-number-2</h2>
+<h3>aria-label</h3>
+<form>
+  Quantity:
+  <input id="keros-input-number-2" type="number" name="points" min="0" max="100" step="10" value="30" aria-label="Quantity">
+</form>
+</div>
+
+<div>
+<h2>keros-input-date-2</h2>
+<h3>title only</h3>
+<form>
+  Enter a date before 1980-01-01:
+  <input id="keros-input-date-2" type="date" name="bday2" max="1979-12-31" title="Birthday"><br>
+</form>
+</div>
+</body>
+</html>
